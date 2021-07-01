@@ -37,22 +37,18 @@
 
 .two {
     background-color:  orange;
-    transform: translate(25,0);
 }
 
 .three {
     background-color: rgb(255, 0, 85);
-    transform: translate(50,0);
 }
 
 .four {
     background-color:  rgb(223, 21, 145);
-    transform: translate(75,0);
 }
 
 .five {
     background-color:  purple;
-    transform: translate(100,0);
 }
 
 .button-container {
