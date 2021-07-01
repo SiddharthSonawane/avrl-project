@@ -61,14 +61,16 @@
     
 }
 
-button {
+.btn {
+    margin: 3%;
+    color: #fff;
     border-radius: 10px;
     width: 15%;
     padding: 1%;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-button:hover {
+.btn, .git-btn:hover {
     cursor: pointer
 }
 
@@ -80,9 +82,16 @@ button:hover {
     background-color: red;
 }
 
-
-
-
+.git-btn {
+    border-radius: 5px;
+    width: auto;
+    background-color: rgb(50, 50, 243);
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding: 1%;
+    margin: 2%;
+}
 
 @keyframes equalize {
     0% {
@@ -163,4 +172,17 @@ button:hover {
     100% {
       height: 80%;
     }
+  }
+
+
+  @media screen and (max-width: 786px) {
+      .btn {
+          margin: 8%;
+          padding: 5%;
+          width: 70%;
+      }
+
+      .git-btn {
+          padding: 3%;
+      }
   }
