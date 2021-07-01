@@ -1,25 +1,29 @@
-.container {
-    margin: 10% 20%;
-    height: 100%;
-    width: auto;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.bar-container{    
+.container {
+    height: 40vh;
+    width: 50%;
+    margin: 5% 25%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+}
+
+.bar-container{   
+    padding: 12px; 
     width: 100%;
-    height: 500px;
-    background-color: black;
+    height: 300px;
+    background-color: rgb(20, 26, 58);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border: 5px black solid;
     transform: rotate(180deg);
-
 }
 
-.bar {          
-    height: 10%;
+.bar {
     width: auto;  
-    
-    /* transition: height 1s linear;   */
 }
 
 .bar:after {
@@ -27,28 +31,28 @@
     visibility: hidden;
 }
 
-/* .bar:hover {    
-    height: 300px;
-} */
-
 .one {
     background-color: yellow;
 }
 
 .two {
-    background-color: orange;
+    background-color:  orange;
+    transform: translate(25,0);
 }
 
 .three {
     background-color: rgb(255, 0, 85);
+    transform: translate(50,0);
 }
 
 .four {
     background-color:  rgb(223, 21, 145);
+    transform: translate(75,0);
 }
 
 .five {
     background-color:  purple;
+    transform: translate(100,0);
 }
 
 .button-container {
@@ -64,6 +68,10 @@ button {
     font-size: 1rem;
 }
 
+button:hover {
+    cursor: pointer
+}
+
 #start-btn {
     background-color: green;    
 }
@@ -71,3 +79,88 @@ button {
 #stop-btn {
     background-color: red;
 }
+
+
+
+
+
+@keyframes equalize {
+    0% {
+      height: 60%;
+    }
+    4% {
+      height: 50%;
+    }
+    8% {
+      height: 40%;
+    }
+    12% {
+      height: 30%;
+    }
+    16% {
+      height: 20%;
+    }
+    20% {
+      height: 30%;
+    }
+    24% {
+      height: 40%;
+    }
+    28% {
+      height: 10%;
+    }
+    32% {
+      height: 40%;
+    }
+    36% {
+      height: 60%;
+    }
+    40% {
+      height: 20%;
+    }
+    44% {
+      height: 40%;
+    }
+    48% {
+      height: 70%;
+    }
+    52% {
+      height: 30%;
+    }
+    56% {
+      height: 100%;
+    }
+    60% {
+      height: 30%;
+    }
+    64% {
+      height: 50%;
+    }
+    68% {
+      height: 60%;
+    }
+    72% {
+      height: 70%;
+    }
+    76% {
+      height: 80%;
+    }
+    80% {
+      height: 70%;
+    }
+    84% {
+      height: 100%;
+    }
+    88% {
+      height: 50%;
+    }
+    92% {
+      height: 60%;
+    }
+    96% {
+      height: 70%;
+    }
+    100% {
+      height: 80%;
+    }
+  }
